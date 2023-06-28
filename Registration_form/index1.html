@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+   
 
     <title>Registration portal</title>
   </head>
   <body>
     <div class="divh1"><h1>Student Enrollement Form</h1></div>
-    <br /><br />
-
+    <h5 style="color: white; text-align: center;">(Upload image on google drive , permit access )</h5>
+  
+     
     <div class="form-box">
       <div class="opacity">
-        <form id="registrationForm" onsubmit="handleSubmit(event)">
+        <form id="registrationForm" >
           <label for="fname">Name:</label
           ><input
             type="text"
@@ -55,7 +56,7 @@
             id="image"
             placeholder="Enter the link of your image"
             required=""
-          />
+          /> 
           <br /><br />
 
           <label for="gender" id="gender">Gender:</label>
@@ -86,11 +87,14 @@
             <input type="submit" name="submit" id="btn-1" value="Enroll" return="clearFormFields(registrationForms)" />
             <input type="reset" name="reset" id="btn-2" value="Clear" />
           </div>
+         
         </form>
       </div>
     </div>
 
     <div class="En-output"><h1>Enrolled Students</h1></div>
-    <div id="displayData" class="submitted-data"></div>
+     <div id="displayData" class="submitted-data"></div> 
+    <script src="script.js"></script>
   </body>
+
 </html>
